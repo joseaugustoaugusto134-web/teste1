@@ -1,0 +1,30 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container 
+{
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(77, 41, 41);
+    margin: 0 auto;
+}
+
+#container2
+{
+    width: 70%;
+    height: 6vh;
+    background-color: rgb(10, 74, 117);
+    margin: 0 auto;
+}
+
+iframe
+{
+    display: block;
+    margin: 0 auto;
+    width: 69.2vw;
+    height: 95vh;
+}

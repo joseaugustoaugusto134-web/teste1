@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table, td
+{
+    border: 2px black solid;
+    color: black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+th
+{
+    height: 5vh;
+    width: 10vw;
+    background-color: rgb(240, 240, 183);
+    border: black solid;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even)
+{
+    background-color: coral;
+}
+
+tr:nth-child(odd)
+{
+    background-color: crimson;
+}
+
+body
+{
+    background-color: #774599;
+}
