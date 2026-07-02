@@ -1,0 +1,41 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.destaque
+{
+    background-color: green;
+    text-align: center;
+}
+
+div
+{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    min-height: 20vh;
+    width: 50vw;
+    border-radius: 5px;
+}
+
+p
+{
+    position: relative;
+
+}
+
+a
+{
+    font-size: 15px;
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+a:hover
+{
+    background-color: cadetblue;
+}
