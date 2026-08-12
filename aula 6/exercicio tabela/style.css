@@ -3,7 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+h1
+{
+    text-align: center;
+}
+
+
 
 #container
 {
@@ -47,10 +55,10 @@ table, td, th
 {
     border: 1px white;
     border-collapse: collapse;
-    padding: 10px;
+    padding: 5px;
     margin: 0 auto;
     width: 50vw;
-    text-align: center;
+    text-align: left;
 }
 
 th
@@ -58,63 +66,106 @@ th
     background-color: darkgray;
 }
 
+th:nth-child(1)
+{
+    width: 10%;
+}
+
+th:nth-child(2)
+{
+    width: 40%;
+}
+
+th:nth-child(3)
+{
+    width: 15%;
+}
+
+th:nth-child(4)
+{
+    width: 15%;
+}
+
+th:nth-child(5)
+{
+    width: 15%;
+}
+
 #container2
 {
     display: flex;
-    height: 5vh;
-    width: 5vw;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item
+{
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 #blocoA
 {
-    display: flex;
-    width: 3vw;
+    width: 2vw;
     height: 3vh;
     min-height: 3vh;
-    min-width: 3vw;
+    min-width: 2vw;
     background-color: #ebfaff;
     border: darkblue 2px solid;
 }
 
 #blocoB
 {
-    display: flex;
-    width: 3vw;
+    width: 2vw;
     height: 3vh;
     min-height: 3vh;
-    min-width: 3vw;
+    min-width: 2vw;
     background-color: lightcyan;
     border: darkblue 2px solid;
 }
 
 #blocoC 
 {
-    display: flex;
-    width: 3vw;
+    width: 2vw;
     height: 3vh;
     min-height: 3vh;
-    min-width: 3vw;
+    min-width: 2vw;
     background-color: #ebffeb;
     border: darkblue 2px solid;
 }
 
 #blocoD
 {
-    display: flex;
-    width: 3vw;
+    width: 2vw;
     height: 3vh;
     min-height: 3vh;
-    min-width: 3vw;
+    min-width: 2vw;
     background-color: #ae3737;
     border: darkblue 2px solid;
 }
 
-.espaco
+tr
 {
-    margin: 10px;
+    border-bottom: 1px black solid;
 }
 
-p{
-    position: relative;
-    top: 8px;
+#blocoA + p
+{
+    color: #ae3737;
+}
+
+#blocoB + p
+{
+    color: rgb(105, 96, 85);
+}
+
+#blocoC + p
+{
+    color: #029c9c;
+}
+
+#blocoD + p
+{
+    color: rgb(160, 100, 95);
 }
