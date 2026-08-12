@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body
+{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 'header header header header header header'
+                         'nav main main main main aside'
+                         'footer footer footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% auto 10%;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+header
+{
+    grid-area: header;
+    display: flex; 
+    background-color: rgb(78, 61, 171);
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+
+    h1
+    {
+        color: white;
+        text-align: center;
+    }
+}
+
+nav
+{
+    grid-area: nav;
+    display: flex; 
+    ul
+    {
+        list-style-type: none;
+    }
+     flex-direction: column; 
+    li
+    {
+        background-color: lightblue;
+        border-bottom: 1px white solid;
+        a
+        {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+        padding: 10px;
+    }
+    :hover
+        {
+            background-color: deepskyblue;
+            color: white;
+        }
+}
+
+main
+{
+    grid-area: main;
+    padding: 10px;
+    p
+    {
+        text-align: justify;
+        margin: 10px 10px 10px 0;
+    }
+    img
+    {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+aside
+{
+    grid-area: aside;
+    background-color: rgb(255, 235, 235);
+    padding: 10px;
+    border: 3px darkred solid;
+}
+
+footer
+{
+    grid-area: footer;
+    display: flex; 
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (max-width: 932px) and (orientation: portrait)
+{
+    body
+    {
+        grid-template-areas: 'header'
+                             'nav'
+                             'main'
+                             'aside'
+                             'footer';
+        grid-template-rows: 10% auto auto auto auto 5%;
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 932px) and (orientation: landscape)
+{
+    body
+    {
+        grid-template-areas: 'header'
+                             'nav'
+                             'main'
+                             'aside'
+                             'footer';
+        grid-template-rows: 15% auto auto auto auto 10%;
+        grid-template-columns: 100%;
+    }
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        align-items: center;
+        justify-content: center;
+        li
+        {
+            flex: 1;
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px)
+{
+    body
+    {
+        grid-template-rows: 8% auto 5%;
+    }
+}

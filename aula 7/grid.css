@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(201, 178, 143);
+}
+
+.container
+{
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'aside main main'
+                         'footer footer footer';
+    height: 100vh;
+    width: 100vw;
+    /* para largura é column */
+    grid-template-columns: 1fr 4fr;
+    /* para a altura é row*/
+    grid-template-rows: 1fr 5fr 0.5fr;
+    gap: 10px;
+}
+
+#cabecalho
+{
+    grid-area: header;
+    background-color: tomato;
+}
+
+#lateral
+{
+    grid-area: aside;
+    background-color: teal;
+}
+
+#principal
+{
+    grid-area: main;
+    background-color: rgb(80, 185, 255);
+}
+
+#rodape
+{
+    grid-area: footer;
+    background-color: darkkhaki;
+}
